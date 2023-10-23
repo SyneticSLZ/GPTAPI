@@ -29,9 +29,10 @@ app.get('/add', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
     // const wixFunctionUrl = `https://syneticx.com/_functions/multiply?catalogItemId=${id}&Quantity=${quantity}&Size=${size}`
     // res.redirect(302, wixFunctionUrl);
+    // const wixFunctionURL = 'https://syneticx.com/_functions/add';
     // const id = req.params.id;
     // const quantity = req.params.quantity;
     // const size = req.params.size;
