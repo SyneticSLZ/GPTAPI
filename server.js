@@ -12,6 +12,9 @@ app.use(cors());
 
 // Make an HTTP GET request to the Wix function
 
+app.get('/home', (req, res) => {
+  res.status(200).json('Welcome, your app is working well');
+})
 
 
 app.get('/add', async (req, res) => {
