@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "node-fetch": "^3.3.2",
-    "whatwg-fetch": "^3.6.19"
+    "whatwg-fetch": "^3.6.19",
+    "ws": "^8.14.2"
   }
 }
