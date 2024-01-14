@@ -46,25 +46,25 @@ app.get('/add', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
-    // const wixFunctionUrl = `https://syneticx.com/_functions/multiply?catalogItemId=${id}&Quantity=${quantity}&Size=${size}`
-    // res.redirect(302, wixFunctionUrl);
-    // const id = req.params.id;
-    // const quantity = req.params.quantity;
-    // const size = req.params.size;
-    // console.log(id,quantity,size)
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // // const wixFunctionUrl = `https://syneticx.com/_functions/multiply?catalogItemId=${id}&Quantity=${quantity}&Size=${size}`
+    // // res.redirect(302, wixFunctionUrl);
+    // // const id = req.params.id;
+    // // const quantity = req.params.quantity;
+    // // const size = req.params.size;
+    // // console.log(id,quantity,size)
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
-    // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // // Forward the response back to the Unity WebGL client
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
@@ -87,19 +87,19 @@ app.get('/RequestUsername', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/RequestUsername?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/RequestUsername?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
-    // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // // Forward the response back to the Unity WebGL client
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
@@ -128,19 +128,19 @@ app.get('/SetUsername', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
-    // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // // Forward the response back to the Unity WebGL client
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
@@ -172,19 +172,19 @@ app.get('/SendFriendRequest', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
-    // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // // Forward the response back to the Unity WebGL client
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
@@ -213,19 +213,19 @@ app.get('/AcceptRequest', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
-    // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // // Forward the response back to the Unity WebGL client
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
@@ -254,19 +254,19 @@ app.get('/DeclineRequest', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
-    // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // // Forward the response back to the Unity WebGL client
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
@@ -293,19 +293,19 @@ app.get('/OnPLayerLeft', async (req, res) => {
     console.error('Error calling Wix Velo function:', error);
   });
 
-    const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
+    // const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
 
-    console.log("Connection from Unity to the server established");
+    // console.log("Connection from Unity to the server established");
     
 
-    // Make the HTTP request to the Wix eCommerce site's exposed function
-    const response = await axios.get(wixFunctionUrl);
-    const responseBody = response.data;
-    console.log("Response Body:", responseBody);
-    // console.log(wixFunctionUrl)
+    // // Make the HTTP request to the Wix eCommerce site's exposed function
+    // const response = await axios.get(wixFunctionUrl);
+    // const responseBody = response.data;
+    // console.log("Response Body:", responseBody);
+    // // console.log(wixFunctionUrl)
 
     // Forward the response back to the Unity WebGL client
-    res.json(response.data);
+    // res.json(response.data);
   } 
   catch (error) {
     // Handle any errors and return an error response
