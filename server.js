@@ -8,7 +8,6 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 
-const WebSocket = require('ws');
 
 const server = app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
