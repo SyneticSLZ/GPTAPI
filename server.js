@@ -80,8 +80,8 @@ app.get('/RequestUsername', async (req, res) => {
     axios.get(wixFunctionURL)
   .then(response => {
     console.log("Connection from Unity to the server established");
-    console.log('Response from Wix Velo function:', response.data);
-    res.status(200).json({ message: response.data });
+    console.log('Response from Wix Velo function:', response.data.responseBody);
+    res.status(200).json({ message: response.data.responseBody });
   })
   .catch(error => {
     console.error('Error calling Wix Velo function:', error);
