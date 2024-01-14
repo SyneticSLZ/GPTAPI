@@ -37,10 +37,18 @@ const server = app.listen(port, () => {
 app.get('/add', async (req, res) => {
   try {
     const wixFunctionURL = 'https://syneticx.com/_functions/add';
-    axios.get(wixFunctionURL)
+    // axios.get(wixFunctionURL)
+    axios.get(wixFunctionURL, {
+      params: {
+        catalogItemId: '2e47dbaf-44bb-9c76-100c-8fad8c896d82',
+        Quantity: 2,
+        Size: 'Small',
+      },
+    })
+    
   .then(response => {
     console.log("Connection from Unity to the server established");
-    console.log('Response from Wix Velo function:', response.data.responseBody);
+    console.log('Response from Wix Velo function:', response.data.body.responseBody);
   })
   .catch(error => {
     console.error('Error calling Wix Velo function:', error);
