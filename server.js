@@ -40,7 +40,7 @@ app.get('/add', async (req, res) => {
     axios.get(wixFunctionURL)
   .then(response => {
     console.log("Connection from Unity to the server established");
-    console.log('Response from Wix Velo function:', response.data);
+    console.log('Response from Wix Velo function:', response.data.responseBody);
   })
   .catch(error => {
     console.error('Error calling Wix Velo function:', error);
