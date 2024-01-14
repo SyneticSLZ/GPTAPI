@@ -81,6 +81,7 @@ app.get('/RequestUsername', async (req, res) => {
   .then(response => {
     console.log("Connection from Unity to the server established");
     console.log('Response from Wix Velo function:', response.data);
+    res.status(200).json({ message: response.data });
   })
   .catch(error => {
     console.error('Error calling Wix Velo function:', error);
@@ -164,9 +165,11 @@ app.get('/SendFriendRequest', async (req, res) => {
   .then(response => {
     console.log("Connection from Unity to the server established");
     console.log('Response from Wix Velo function:', response.data);
+    res.status(200).json({ message: 'Friend request sent successfully' });
   })
   .catch(error => {
     console.error('Error calling Wix Velo function:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   });
 
     const wixFunctionUrl = "https://www.syneticx.com/_functions/asdas?catalogItemId=2e47dbaf-44bb-9c76-100c-8fad8c896d82&Quantity=2&Size=Small";
